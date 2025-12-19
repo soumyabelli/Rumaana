@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>My Portfolio – Rumana</title>
-
-  <!-- Mobile support -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <title>Rumana Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
     }
 
     body {
+      margin: 0;
+      padding: 0;
       background: #ffffff;
       font-family: Arial, sans-serif;
     }
@@ -25,156 +23,65 @@
       padding: 10px;
     }
 
-    .full-img img {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .col-50 {
+      width: 50%;
+      padding: 10px;
+    }
+
+    img {
       width: 100%;
       height: auto;
       display: block;
     }
 
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-
-    .col-50 {
-      flex: 1 1 48%;
-    }
-
-    .col-100 {
-      flex: 1 1 100%;
-    }
-
-    .row img {
-      width: 100%;
-      height: auto;
-      border-radius: 6px;
-    }
-
-    a img {
-      cursor: pointer;
-    }
-
-    /* Mobile */
+    /* ✅ MOBILE FIX */
     @media (max-width: 768px) {
       .col-50 {
-        flex: 1 1 100%;
+        width: 100%;
       }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
 
-    <!-- Top Banner -->
-    <div class="full-img">
-      <img src="images/my-portfolio-rumana_01.gif" alt="Portfolio Banner">
+<div class="container">
+
+  <!-- Kanco Section -->
+  <div class="row">
+    <div class="col-50">
+      <a href="https://www.instagram.com/reel/DPoRTq8Eq8Z/" target="_blank">
+        <img src="images/kanco.gif" alt="Kanco Reel">
+      </a>
     </div>
 
-    <!-- Row 1 -->
-    <div class="row">
-      <div class="col-50">
-        <a href="https://www.instagram.com/reel/DQttpA6kwRQ/">
-          <img src="images/grizzly-1-.gif" alt="">
-        </a>
-      </div>
-
-      <div class="col-50">
-        <a href="https://www.instagram.com/reel/DQEn_G3jF1I/">
-          <img src="images/dd-2-.gif" alt="">
-        </a>
-      </div>
+    <div class="col-50">
+      <a href="https://www.instagram.com/p/DQCNUlskjKc/" target="_blank">
+        <img src="images/kanco-2.gif" alt="Kanco Post">
+      </a>
     </div>
-
-    <!-- Row 2 -->
-    <div class="row">
-      <div class="col-50">
-        <a href="https://www.instagram.com/reel/DO8pWMdAce6/">
-          <img src="images/grizzly-3.gif" alt="">
-        </a>
-      </div>
-
-      <div class="col-50">
-        <a href="https://www.instagram.com/reel/DOdf2CgkxIl/">
-          <img src="images/grizzly-4-.gif" alt="">
-        </a>
-      </div>
-    </div>
-
-    <!-- Grizzly link -->
-    <div class="row">
-      <div class="col-100">
-        <a href="https://www.instagram.com/grizzlyindiaofficial">
-          <img src="images/grizzly-link-.gif" alt="">
-        </a>
-      </div>
-    </div>
-
-    <!-- DD -->
-    <div class="row">
-      <div class="col-50">
-        <a href="https://www.instagram.com/reel/DQHAB6QgZiv/">
-          <img src="images/dd-1.gif" alt="">
-        </a>
-      </div>
-
-      <div class="col-50">
-        <a href="https://www.instagram.com/reel/DQWX6Zpge3D/">
-          <img src="images/dd-2.gif" alt="">
-        </a>
-      </div>
-    </div>
-
-    <!-- DD More -->
-    <div class="row">
-      <div class="col-50">
-        <a href="https://www.instagram.com/reel/DQ9MNV8gVqx/">
-          <img src="images/dd-3-.jpg" alt="">
-        </a>
-      </div>
-
-      <div class="col-50">
-        <a href="https://www.instagram.com/reel/DRzMOH1gUSd/">
-          <img src="images/dd-4-.gif" alt="">
-        </a>
-      </div>
-    </div>
-
-    <!-- Drama n Dough -->
-    <div class="row">
-      <div class="col-100">
-        <a href="https://www.instagram.com/drama_n_dough/">
-          <img src="images/dd-link-.gif" alt="">
-        </a>
-      </div>
-    </div>
-
-    <!-- Kanco -->
-    <div class="row">
-      <div class="col-50">
-        <a href="https://www.instagram.com/reel/DPoRTq8Eq8Z/">
-          <img src="images/kanco-.gif" alt="">
-        </a>
-      </div>
-
-      <div class="col-50">
-        <a href="https://www.instagram.com/p/DQCNUlskjKc/">
-          <img src="images/kanco-2.gif" alt="">
-        </a>
-      </div>
-    </div>
-
-    <!-- Drive -->
-    <div class="row">
-      <div class="col-100">
-        <a href="https://drive.google.com/drive/folders/1CuHg0K-t2Y-xIdMYhGvduA35FtP_U1zE">
-          <img src="images/drive-.jpg" alt="">
-        </a>
-      </div>
-    </div>
-
   </div>
+
+  <!-- Drive Section -->
+  <div class="row">
+    <div class="col-50">
+      <a href="https://drive.google.com/drive/folders/1CuHg0K-t2Y-xIdMYhGvduA35FtP_U1zE" target="_blank">
+        <img src="images/drive-.jpg" alt="Drive Link">
+      </a>
+    </div>
+
+    <div class="col-50">
+      <img src="images/my-portfolio-rumana_45.gif" alt="">
+    </div>
+  </div>
+
+</div>
+
 </body>
 </html>
